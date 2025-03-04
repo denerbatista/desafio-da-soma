@@ -12,7 +12,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.solid,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.System.Cnds.CompareBoolVar,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.System.Exps.random,
 		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Keyboard.Cnds.IsKeyDown,
@@ -20,16 +23,13 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.Sprite.Acts.Spawn,
-		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.System.Cnds.Every,
+		C3.Plugins.System.Acts.CreateObject,
+		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.System.Cnds.OnLayoutStart,
-		C3.Plugins.System.Acts.CreateObject,
-		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.System.Exps.int,
-		C3.Plugins.System.Exps.random,
 		C3.Plugins.System.Acts.ResetEventVar,
-		C3.Plugins.System.Cnds.Every,
-		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.Sprite.Acts.SetCollisions,
 		C3.Plugins.System.Acts.SetBoolVar,
 		C3.Plugins.Text.Acts.Destroy,
@@ -74,9 +74,12 @@ self.C3_JsPropNameTable = [
 	{Sprite2: 0},
 	{Texto2: 0},
 	{fechar2: 0},
+	{somaDois: 0},
+	{somaCinco: 0},
 	{soma: 0},
 	{objetivoSoma: 0},
-	{vivoMorto: 0}
+	{vivoMorto: 0},
+	{geraNumero: 0}
 ];
 
 self.InstanceType = {
@@ -111,5 +114,7 @@ self.InstanceType = {
 	estrela: class extends self.ISpriteInstance {},
 	Sprite2: class extends self.ISpriteInstance {},
 	Texto2: class extends self.ITextInstance {},
-	fechar2: class extends self.ISpriteInstance {}
+	fechar2: class extends self.ISpriteInstance {},
+	somaDois: class extends self.ISpriteInstance {},
+	somaCinco: class extends self.ISpriteInstance {}
 }

@@ -1399,12 +1399,24 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0(0, 21);
+		},
 		() => "Esquerda",
 		() => "Direita",
 		() => "Parado",
 		() => 1,
 		() => 0,
 		() => "",
+		() => 3,
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0(64, 900);
+		},
+		() => -10,
+		() => 2,
+		() => 5,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
@@ -1424,16 +1436,6 @@ self.C3_ExpressionFuncs = [
 		() => 414,
 		() => 301,
 		() => 182,
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0(2, 6);
-		},
-		() => 2,
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0(64, 900);
-		},
-		() => -10,
 		() => "morto",
 		() => 266,
 		() => 391,
