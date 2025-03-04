@@ -15,6 +15,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.Keyboard.Cnds.IsKeyDown,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.Sprite.Acts.Destroy,
@@ -22,15 +23,18 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.System.Exps.int,
 		C3.Plugins.System.Exps.random,
 		C3.Plugins.System.Acts.ResetEventVar,
-		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.System.Cnds.Every,
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.Sprite.Acts.SetCollisions,
 		C3.Plugins.System.Acts.SetBoolVar,
 		C3.Plugins.Text.Acts.Destroy,
-		C3.Plugins.Touch.Cnds.OnTapGestureObject
+		C3.Plugins.Touch.Cnds.OnTapGestureObject,
+		C3.Plugins.System.Cnds.CompareVar
 	];
 };
 self.C3_JsPropNameTable = [
@@ -60,6 +64,16 @@ self.C3_JsPropNameTable = [
 	{Texto: 0},
 	{gameOverRespostaNao: 0},
 	{Fundo2: 0},
+	{fechar: 0},
+	{continuarPergunta: 0},
+	{continuarRespostaSim: 0},
+	{continuarRespostaNao: 0},
+	{Esquerda2: 0},
+	{Direita2: 0},
+	{estrela: 0},
+	{Sprite2: 0},
+	{Texto2: 0},
+	{fechar2: 0},
 	{soma: 0},
 	{objetivoSoma: 0},
 	{vivoMorto: 0}
@@ -87,5 +101,15 @@ self.InstanceType = {
 	gameOverRespostaSim: class extends self.ITextInstance {},
 	Texto: class extends self.ITextInstance {},
 	gameOverRespostaNao: class extends self.ITextInstance {},
-	Fundo2: class extends self.ISpriteInstance {}
+	Fundo2: class extends self.ISpriteInstance {},
+	fechar: class extends self.ISpriteInstance {},
+	continuarPergunta: class extends self.ITextInstance {},
+	continuarRespostaSim: class extends self.ITextInstance {},
+	continuarRespostaNao: class extends self.ITextInstance {},
+	Esquerda2: class extends self.ISpriteInstance {},
+	Direita2: class extends self.ISpriteInstance {},
+	estrela: class extends self.ISpriteInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	Texto2: class extends self.ITextInstance {},
+	fechar2: class extends self.ISpriteInstance {}
 }
