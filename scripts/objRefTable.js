@@ -23,18 +23,20 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.Sprite.Acts.Spawn,
+		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.System.Cnds.Every,
+		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Exps.int,
 		C3.Plugins.System.Acts.ResetEventVar,
-		C3.Plugins.Sprite.Acts.SetCollisions,
-		C3.Plugins.System.Acts.SetBoolVar,
-		C3.Plugins.Text.Acts.Destroy,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
-		C3.Plugins.System.Cnds.CompareVar
+		C3.Plugins.System.Acts.SetBoolVar,
+		C3.Plugins.Sprite.Acts.SetCollisions,
+		C3.Plugins.Text.Acts.Destroy,
+		C3.Plugins.Sprite.Acts.SetDefaultColor
 	];
 };
 self.C3_JsPropNameTable = [
@@ -76,10 +78,22 @@ self.C3_JsPropNameTable = [
 	{fechar2: 0},
 	{somaDois: 0},
 	{somaCinco: 0},
+	{coracaoVida2: 0},
+	{coracaoVida1: 0},
+	{coracaoVida3: 0},
+	{somaSeis: 0},
+	{somaSete: 0},
+	{somaQuatro: 0},
+	{somaTres: 0},
+	{somaOito: 0},
+	{somaNove: 0},
 	{soma: 0},
 	{objetivoSoma: 0},
 	{vivoMorto: 0},
-	{geraNumero: 0}
+	{geraNumero: 0},
+	{vidas: 0},
+	{somaSubtracao: 0},
+	{randonNumeros: 0}
 ];
 
 self.InstanceType = {
@@ -116,5 +130,14 @@ self.InstanceType = {
 	Texto2: class extends self.ITextInstance {},
 	fechar2: class extends self.ISpriteInstance {},
 	somaDois: class extends self.ISpriteInstance {},
-	somaCinco: class extends self.ISpriteInstance {}
+	somaCinco: class extends self.ISpriteInstance {},
+	coracaoVida2: class extends self.ISpriteInstance {},
+	coracaoVida1: class extends self.ISpriteInstance {},
+	coracaoVida3: class extends self.ISpriteInstance {},
+	somaSeis: class extends self.ISpriteInstance {},
+	somaSete: class extends self.ISpriteInstance {},
+	somaQuatro: class extends self.ISpriteInstance {},
+	somaTres: class extends self.ISpriteInstance {},
+	somaOito: class extends self.ISpriteInstance {},
+	somaNove: class extends self.ISpriteInstance {}
 }
