@@ -87,6 +87,8 @@ self.C3_JsPropNameTable = [
 	{somaTres: 0},
 	{somaOito: 0},
 	{somaNove: 0},
+	{Sprite: 0},
+	{Sprite3: 0},
 	{soma: 0},
 	{objetivoSoma: 0},
 	{vivoMorto: 0},
@@ -139,5 +141,7 @@ self.InstanceType = {
 	somaQuatro: class extends self.ISpriteInstance {},
 	somaTres: class extends self.ISpriteInstance {},
 	somaOito: class extends self.ISpriteInstance {},
-	somaNove: class extends self.ISpriteInstance {}
+	somaNove: class extends self.ISpriteInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	Sprite3: class extends self.ISpriteInstance {}
 }
